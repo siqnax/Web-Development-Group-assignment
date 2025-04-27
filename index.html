@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Watson - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Mwas Portfolio</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="btn-primary">Hire Me</button></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Hi, I'm Francis Mwangi</h1>
+      <h2>Software engineer</h2>
+      <p>I love Graphic Design and have been learning web development from PLP since 2024.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary">Hire Me</button>
+        <button class="btn-secondary">My Portfolio</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-image" data-aos="fade-right">
+      <img src="images/mwas.jpg" alt="Francis Mwangi" />
+    </div>
+    <div class="about-info" data-aos="fade-left">
+      <h3>My Biography</h3>
+      <h2>A Web Developer for me</h2>
+      <p>I love Graphic design and Photography and have been working on my portfolio since 2016. Contact me and we will discuss your projects!</p>
+      <div class="contact-info">
+        <p><strong>Name:</strong> Francis Mwangi</p>
+        <p><strong>Email:</strong> mwas@mail.com</p>
+        <p><strong>From:</strong> Nairobi, kenya</p>
+        <p><strong>Phone:</strong> +00 234 567 8901</p>
+      </div>
+      <div class="social-links">
+        <a href="#"></a>
+        <a href="#">Behance</a>
+        <a href="#">Dribbble</a>
+        <a href="#">Twitter</a>
+      </div>
+      <div class="about-buttons">
+        <button class="btn-primary">Hire Me</button>
+        <button class="btn-secondary">Download CV</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2 data-aos="fade-up">What I Do For You</h2>
+    <div class="service-cards">
+      <div class="service-card" data-aos="zoom-in">
+        <h3>Web Development</h3>
+        <p>Building professional websites with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in">
+        <h3>App Development</h3>
+        <p>Creating modern and responsive mobile apps.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in">
+        <h3>Photography</h3>
+        <p>Capturing beautiful moments through professional photography.</p>
+      </div>
+    </div>
+    <button class="more-services">More Services ➞</button>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 data-aos="fade-up">Contact Me</h2>
+    <form class="contact-form" onsubmit="saveForm(event)" data-aos="fade-up">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 francis mwangi. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
